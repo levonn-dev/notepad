@@ -1,0 +1,182 @@
+/* Global stuff */
+html {
+  height: 100%;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  min-width: 1020px;
+  height: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.code {
+  font-family: monospace;
+}
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eb8717;
+  text-decoration: underline;
+}
+
+a img {
+  border-style: none;
+}
+
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+}
+
+.container {
+  width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.container:after {
+  clear: both;
+}
+
+.span9 {
+  width: 700px;
+}
+
+/* notepad styles */
+.notepads-page {
+  background: #fcfcfc;
+}
+
+.notepad-container {
+  position: relative;
+  width: 705px;
+  height: 290px;
+  background: white;
+  border: 1px solid #777;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.11);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,.11);
+  box-shadow: 0 2px 5px rgba(0,0,0,.11);
+}
+
+.notepad-container .firepad {
+  width: 100%;
+  height: 100%;
+}
+
+#userlist .firepad {
+  position: absolute;
+  left: 175px;
+  right: 0;
+  width: auto;
+  height: 290px;
+}
+
+#userlist .firepad-userlist {
+  position: absolute;
+  width: 175px;
+  height: 290px;
+}
+
+.notepad-title {
+  margin-top: 60px;
+  font-size: 32px;
+  color: #535353;
+  padding-bottom: 15px;
+}
+
+/* auth gate */
+#signin-gate {
+  text-align: center;
+  padding: 80px 0;
+}
+
+#signin-btn {
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+  background: #0088cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+#signin-btn:hover {
+  background: #006ea3;
+}
+
+.signin-error {
+  margin-top: 16px;
+  color: #c00;
+  font-size: 13px;
+}
+
+.notepads-page section {
+  display: none;
+}
+
+.notepads-page.authorized section {
+  display: block;
+}
+
+#signout-bar {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+#signin-email {
+  margin-right: 10px;
+}
+
+.no-access {
+  margin-right: 10px;
+  color: #c00;
+}
+
+#signout-btn {
+  padding: 4px 10px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: #333;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Notepad</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./files/global.css">
+  <link rel="stylesheet" href="./vendor/firepad/firepad.css">
+  <link rel="stylesheet" href="./vendor/firepad/firepad-userlist.css">
+  <link rel="stylesheet" href="./vendor/codemirror/codemirror.css">
+</head>
+
+<body class="notepads-page">
+  <div class="container" id="notepads-container">
+    <div class="row">
+    <div class="span9">
+
+      <section id="richtext">
+        <div class="notepad-title">1.
+        </div>
+        <div class="notepad-container"></div>
+      </section>
+
+      <section id="code">
+        <div class="notepad-title">2.
+        </div>
+        <div class="notepad-container"></div>
+      </section>
+
+      <section id="ace">
+        <div class="notepad-title">3.
+        </div>
+        <div class="notepad-container ace_editor ace-tm"></div>
+      </section>
+
+      <section id="userlist">
+        <div class="notepad-title">4.
+        </div>
+        <div class="notepad-container"></div>
+      </section>
+    </div>
+    </div>
+  </div>
+
+  <script src="./vendor/jquery/jquery-1.9.1.min.js"></script>
+
+  <!-- Firebase -->
+  <script src="./vendor/firebase/firebase.js"></script>
+  <script src="./files/firebase-config.js"></script>
+
+  <!-- CodeMirror -->
+  <script src="./vendor/codemirror/codemirror.js"></script>
+  <script src="./vendor/codemirror/javascript.js"></script>
+
+  <!-- Firepad -->
+  <script src="./vendor/firepad/firepad.min.js"></script>
+
+  <!-- ACE -->
+  <script src="./vendor/ace/ace.js"></script>
+  <script src="./vendor/ace/mode-javascript.js"></script>
+
+  <script src="./vendor/firepad/firepad-userlist.js"></script>
+
+  <script src="./files/notepads.js"></script>
+</body>
+</html>
